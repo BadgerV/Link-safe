@@ -3,7 +3,7 @@ import { Response, Request } from "express";
 import Flutterwave from "flutterwave-node-v3";
 
 import { defaultConfig } from "../config/config";
-import { getVault } from "link-vault";
+import { getVault } from "safe-vault";
 import algosdk from "algosdk";
 
 const algodToken = "";

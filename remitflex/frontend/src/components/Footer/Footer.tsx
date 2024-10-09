@@ -15,7 +15,7 @@ const Footer = () => {
             Go to App
           </div>
           <div className="end">
-            <p>© Remitflex2023</p>
+            <p>© remitsafe2023</p>
           </div>
           <div className="paper">
             <img src="/assets/paperplane.png" alt="" />

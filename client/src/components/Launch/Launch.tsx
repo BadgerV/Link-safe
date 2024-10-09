@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { LaunchContainer } from "./Lauch.styles";
 import CustomButton from "../Button";
-import { getVault } from "link-vault";
+import { getVault } from "safe-vault";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { computeAssets } from "../../utils/assets.utils";
@@ -125,7 +125,7 @@ const LaunchVault = () => {
               </div>
               <div className="popup__second">
                 <a
-                  href={`https://remitflex.com/app${location.pathname}${location.hash}`}
+                  href={`https://remitsafe.com/app${location.pathname}${location.hash}`}
                   target="_blank"
                   rel="noreferrer"
                 >

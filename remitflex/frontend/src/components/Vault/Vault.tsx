@@ -3,7 +3,7 @@ import { VaultContainer } from "./Vault.styles";
 import { useNavigate } from "react-router-dom";
 import { QrReader } from "react-qr-reader";
 import Button from "../Button/Button";
-import { getVault } from "link-vault";
+import { getVault } from "safe-vault";
 import { useDispatch } from "react-redux";
 import { setCurrentUser } from "../../store/user/user.reducer";
 const REACT_APP_CLIENT_URL = import.meta.env.VITE_APP_ENGINE_VAULT as string;

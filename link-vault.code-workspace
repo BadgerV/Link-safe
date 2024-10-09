@@ -1,15 +1,15 @@
 {
     "folders": [
       {
-        "name": "@link-vault/backend",
+        "name": "@safe-vault/backend",
         "path": "./server"
       },
       {
-        "name": "@link-vault/frontend",
+        "name": "@safe-vault/frontend",
         "path": "./client"
       },
       {
-        "name": "@link-vault/contracts",
+        "name": "@safe-vault/contracts",
         "path": "./contracts"
       },
       {

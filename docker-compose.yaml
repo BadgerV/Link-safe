@@ -1,4 +1,3 @@
-version: '3.8'
 
 services:
   client:
@@ -27,26 +26,26 @@ services:
     ports:
       - '8000:8000'
 
-  remitflex-server:
+  remitsafe-server:
     build:
       context: ./
-      dockerfile: ./remitflex/backend/Dockerfile
-    container_name: remitflex-backend
+      dockerfile: ./remitsafe/backend/Dockerfile
+    container_name: remitsafe-backend
     volumes:
-      - "./remitflex/backend:/app"
+      - "./remitsafe/backend:/app"
       - "/app/node_modules"
     ports:
       - '3001:3001'
 
-  remitflex-client:
+  remitsafe-client:
     depends_on:
-      - remitflex-server
+      - remitsafe-server
     build:
       context: ./
-      dockerfile: ./remitflex/frontend/Dockerfile
-    container_name: remitflex-frontend
+      dockerfile: ./remitsafe/frontend/Dockerfile
+    container_name: remitsafe-frontend
     volumes:
-      - "./remitflex/frontend:/app"
+      - "./remitsafe/frontend:/app"
       - "/app/node_modules"
     ports:
       - '8001:8001'

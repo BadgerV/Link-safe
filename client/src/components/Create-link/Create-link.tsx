@@ -3,7 +3,7 @@ import Card from "../Card";
 import { computeAssets, Asset, NFT } from "../../utils/assets.utils";
 import CustomButton from "../Button";
 import { useSelector, useDispatch } from "react-redux";
-import { createVault } from "link-vault";
+import { createVault } from "safe-vault";
 import { useNavigate } from "react-router-dom";
 import { CreatedLinkContainer } from "./Create-link.styles";
 import { CopyToClipboard } from "react-copy-to-clipboard";

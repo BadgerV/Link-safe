@@ -1,16 +1,16 @@
 {
-  "name": "link-vault",
+  "name": "safe-vault",
   "version": "1.0.0",
   "description": " Providing Non Custodial algorand wallets via a simple link or QR",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd remitflex && cd backend && node dist/server.js",
-    "heroku-postbuild": "cd remitflex/backend && npm install && npm run build",
-    "server": "npm run dev --w @link-vault/server",
-    "client": "npm start --w @link-vault/client",
+    "start": "cd remitsafe && cd backend && node dist/server.js",
+    "heroku-postbuild": "cd remitsafe/backend && npm install && npm run build",
+    "server": "npm run dev --w @safe-vault/server",
+    "client": "npm start --w @safe-vault/client",
     "dev": "npm run server && npm run client",
-    "deploy": "npm run build --w @link-vault/client && npm run dev --w @link-vault/server",
+    "deploy": "npm run build --w @safe-vault/client && npm run dev --w @safe-vault/server",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Samuellyworld/Link-vault.git"
+    "url": "git+https://github.com/BadgerV/Link-safe.git"
   },
-  "author": "Samuel Tosin and David Kazeem",
+  "author": "Segunmaru Faozan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Samuellyworld/Link-vault/issues"
+    "url": "https://github.com/BadgerV/Link-safe/issues"
   },
-  "homepage": "https://github.com/Samuellyworld/Link-vault#readme",
+  "homepage": "https://github.com/BadgerV/Link-safe#readme",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-private-property-in-object": "^7.22.11",

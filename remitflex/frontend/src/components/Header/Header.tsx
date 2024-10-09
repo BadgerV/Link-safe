@@ -24,7 +24,7 @@ const Header: React.FC = () => {
   return (
     <LogoWrapper>
       <Link to="/" className="link-wrapper">
-        <Image src={"/assets/remitflexlogo.png"} alt="logo" />
+        <Image src={"/assets/remitsafelogo.png"} alt="logo" />
         <Text>
           {" "}
           Remit<span>flex</span>

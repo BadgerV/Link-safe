@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
 
         <p className="powered">
-          powered by <img className="powerImg" src="/assets/link-vault.png" alt="powered" />
+          powered by <img className="powerImg" src="/assets/safe-vault.png" alt="powered" />
         </p>
       </div>
       <div className="hero__right">

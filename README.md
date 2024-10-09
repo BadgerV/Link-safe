@@ -8,11 +8,11 @@ Paving the Way for Widespread Crypto and Algorand Adoption, Providing Non Custod
 
 ## 🎉 About.
 
-[Linkvault](https://linkvault.com.ng) simplifies Algorand wallet creation with a one-click solution, Providing Non Custodial algorand wallets via a simple link or QR. Including Algorand Standard Asset Integration, making it perfect to share with family and friends that do not necessarily use crypto prior and removes the complexity of Secret Phrases. [Linkvault's SDK](https://www.npmjs.com/package/link-vault) empowers developers to unlock Algorand's potential, making it a hub for innovation.
+[Linkvault](https://linkvault.com.ng) simplifies Algorand wallet creation with a one-click solution, Providing Non Custodial algorand wallets via a simple link or QR. Including Algorand Standard Asset Integration, making it perfect to share with family and friends that do not necessarily use crypto prior and removes the complexity of Secret Phrases. [Linkvault's SDK](https://www.npmjs.com/package/safe-vault) empowers developers to unlock Algorand's potential, making it a hub for innovation.
 
 To onboard more users across Africa, we need to look at building products in crypto that help users make payment for essential services with crypto.
 
-[Remitflex](https://remitflex.com) erases fees and expands global accessibility. Remitflex covers remittances and payment of over 17,000 bill payments seamlessly, merging traditional finance with crypto and using the Linkvault sdk to process its USDC payment for services.
+[remitsafe](https://remitsafe.com) erases fees and expands global accessibility. remitsafe covers remittances and payment of over 17,000 bill payments seamlessly, merging traditional finance with crypto and using the Linkvault sdk to process its USDC payment for services.
 
 ## 💫 Problem Description.
 
@@ -26,19 +26,19 @@ To onboard more users across Africa, we need to look at building products in cry
 
 - [Linkvault](https://linkvault.com.ng) disrupts the norm, offering a one-click solution for creating encrypted Algorand wallets, erasing barriers and ushering in instantaneous adoption.
 
-- [Remitflex](https://remitflex.com) leveraging Algorand's stability and Linkvault's intuitive wallets, redefines financial transactions, eradicating fees, and expanding accessibility across diverse payment categories.
+- [remitsafe](https://remitsafe.com) leveraging Algorand's stability and Linkvault's intuitive wallets, redefines financial transactions, eradicating fees, and expanding accessibility across diverse payment categories.
 
 ## 🔄 Architectural Flow.
 
-Link vault & remitflex Architectural flow
+Link vault & remitsafe Architectural flow
 ![image](https://i.postimg.cc/KYDDf8vB/18bd5b8766eeeffa23cf4d64e99ad462.jpg)
 
 ## 🤖 Tools & Technologies
 
-- Link-Vault SDK our inhouse NPM package.
+- safe-vault SDK our inhouse NPM package.
 - ReactJS - web framework.
 - TypeScript - for static typing.
-- Express - (remitflex engine).
+- Express - (remitsafe engine).
 - algosdk - algorand for crafting transactions onchain.
 - docker - for containerizing and easy development.
 - Flutterwave SDK - payment gateway.
@@ -51,18 +51,18 @@ Link vault & remitflex Architectural flow
 * git clone the repository.
 
 ```
-  $ git clone git@github.com:Samuellyworld/Link-vault.git
+  $ git clone git@github.com:Samuellyworld/safe-vault.git
 ```
 
-- go to `link-vault` directory on your terminal
+- go to `safe-vault` directory on your terminal
 
 ```
-  $ cd link-vault
+  $ cd safe-vault
 ```
 
-- set your `.env` for `client`, `server` , `remitflex/frontend` and `remitflex/backend` folder.
+- set your `.env` for `client`, `server` , `remitsafe/frontend` and `remitsafe/backend` folder.
 
-* copy everything on `.env.example` to a newly created `.env` file for both `client`, `server` `remitflex/frontend` and `remitflex/backend` directory.
+* copy everything on `.env.example` to a newly created `.env` file for both `client`, `server` `remitsafe/frontend` and `remitsafe/backend` directory.
 
 - build docker container and start app
 
@@ -79,11 +79,11 @@ docker-compose up  --build
 ## 🔗 Links.
 
 - [Live](https://linkvault.com.ng/)
-- [NPM Package](https://www.npmjs.com/package/link-vault)
+- [NPM Package](https://www.npmjs.com/package/safe-vault)
 - [Figma](https://www.figma.com/file/RayAw3ELTPhG1gYUzYeB9Z/LinkVault-%26-Remit-Flex?type=design&node-id=0-1&mode=design&t=zdH2M2YPHB8CK0Bp-0)
 - [Youtube](https://www.youtube.com/watch?v=y_CYJotFLYM)
 - [Deck](https://drive.google.com/file/d/1xsRDn525CR-bs2bUAaGg86YVk0UCX5Mh/view)
-- [RemitFlex Post man API Documentation](https://documenter.getpostman.com/view/9070802/2s9YXmWzwh)
+- [remitsafe Post man API Documentation](https://documenter.getpostman.com/view/9070802/2s9YXmWzwh)
 
 ## 🪪 License.
 

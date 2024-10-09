@@ -1,5 +1,5 @@
 import algosdk from "algosdk";
-import { getVault } from "link-vault";
+import { getVault } from "safe-vault";
 import { errorToast } from "./customToast";
 
 // constants

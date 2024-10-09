@@ -7,7 +7,7 @@ Linkvault is a powerful tool for integrating non-custodial Algorand wallets seam
 To install the Linkvault package, use npm:
 
 ```bash
-npm install link-vault
+npm install safe-vault
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install link-vault
 ### Importing the Package
 
 ```javascript
-import linkvault from "link-vault";
+import linkvault from "safe-vault";
 ```
 
 ### Creating a Vault
@@ -62,7 +62,7 @@ The `getVault` method takes a URL (link to the vault) and retrieves the associat
 ### Example: Create and Fund a Linkvault with Algorand
 
 ```javascript
-import { createVault, getVault } from "link-vault";
+import { createVault, getVault } from "safe-vault";
 import algosdk from "algosdk";
 
 const algodToken = ""; // Replace with your API token
@@ -124,7 +124,7 @@ It generates a new Linkvault as the recipient address, and sends Algos from a sp
 ### Example: Opt-In to an Algorand Standard Asset (ASA) with a link vault
 
 ```javascript
-import { createVault, getVault } from "link-vault";
+import { createVault, getVault } from "safe-vault";
 import algosdk from "algosdk";
 
 const algodToken = ""; // Replace with your API token
@@ -192,7 +192,7 @@ It generates a new Linkvault as the recipient address, and sends Algos from a sp
 ### Example: Create and fund Linkvault with Algorand Standard Assets (ASAs) and NFTs
 
 ```javascript
-import { createVault, getVault } from "link-vault";
+import { createVault, getVault } from "safe-vault";
 import algosdk from "algosdk";
 
 const algodToken = ""; // Replace with your API token
@@ -328,11 +328,11 @@ const result = await claimVault(recipient);
 
 ## Package Information
 
-- **Package Name**: link-vault
+- **Package Name**: safe-vault
 - **Version**: 1.3.0
 - **Author**: David Kazeem and Samuel Tosin
 - **License**: ISC
-- **GitHub Repository**: [linkvault-package](https://github.com/Samuellyworld/Link-vault/tree/main/sdk)
-- **Issues**: [Linkvault Issues](https://github.com/Samuellyworld/Link-vault/issues)
+- **GitHub Repository**: [linkvault-package](https://github.com/Samuellyworld/safe-vault/tree/main/sdk)
+- **Issues**: [Linkvault Issues](https://github.com/Samuellyworld/safe-vault/issues)
 
-For more details and examples, please refer to the [Linkvault GitHub Repository](https://github.com/Samuellyworld/Link-vault/tree/main/sdk#readme). Feel free to contribute, report issues, or provide feedback!
+For more details and examples, please refer to the [Linkvault GitHub Repository](https://github.com/Samuellyworld/safe-vault/tree/main/sdk#readme). Feel free to contribute, report issues, or provide feedback!

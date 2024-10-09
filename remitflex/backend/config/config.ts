@@ -23,9 +23,9 @@ export const corsSettings: CorsSettings = isProd
         "https://google.com",
         "https://linkvault.com.ng",
         "https://www.linkvault.com.ng",
-        "https://remitflex.com",
-        "https://www.remitflex.com",
-        "https://link-vault.netlify.app",
+        "https://remitsafe.com",
+        "https://www.remitsafe.com",
+        "https://safe-vault.netlify.app",
         "http://localhost:3000"
       ],
       methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"]
