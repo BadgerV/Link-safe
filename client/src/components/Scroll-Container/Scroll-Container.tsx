@@ -46,8 +46,8 @@ const ScrollContainer: React.FC = () => {
       >
         <div className="section__first__content">
           <h1> 1. </h1>
-          <h2>Create a LinkVault.</h2>
-          <p>With just a few prompts, you have your LinkVault.</p>
+          <h2>Create a linksafe.</h2>
+          <p>With just a few prompts, you have your linksafe.</p>
         </div>
       </ScrollSection>
       <ScrollSection visible={scrollPercentage > 33 && scrollPercentage <= 66}>
@@ -62,7 +62,7 @@ const ScrollContainer: React.FC = () => {
           <h1> 3. </h1>
           <h2>Share with love. </h2>
           <p>Share your Link and claim to your algorand wallet </p>
-          {/* <p>With just a few prompts, you have your LinkVault</p> */}
+          {/* <p>With just a few prompts, you have your linksafe</p> */}
         </div>
       </ScrollSection>
       <div className="scroll__percent">

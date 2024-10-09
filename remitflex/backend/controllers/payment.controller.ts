@@ -43,14 +43,14 @@ export const getRate = async (req: Request, res: Response) => {
 
 // Initialize a Bill payment transaction.
 export const initializeBillPayment = async (req: Request, res: Response) => {
-  const linkvaulturl = req.body.linkvaulturl;
+  const linksafeurl = req.body.linksafeurl;
   const amount = req.body.amount;
   const rate = await USDCNGNRate();
   const amountUSD = Number((amount / rate).toFixed(2));
 
   try {
     const params = await algodClient.getTransactionParams().do();
-    const vault: any = await getVault(linkvaulturl);
+    const vault: any = await getVault(linksafeurl);
     console.log(defaultConfig.ASSET_ID, vault);
 
     const txnParams = {
@@ -118,7 +118,7 @@ export const initializeBillPayment = async (req: Request, res: Response) => {
   } catch (error) {
     res.status(500).json({
       error: {
-        message: "Couldn't initialize transaction from Linkvault."
+        message: "Couldn't initialize transaction from linksafe."
       }
     });
   }
@@ -163,14 +163,14 @@ export const resolveAccount = async (req: Request, res: Response) => {
 
 // Initialize a Bill payment transaction.
 export const initializePayment = async (req: Request, res: Response) => {
-  const linkvaulturl = req.body.linkvaulturl;
+  const linksafeurl = req.body.linksafeurl;
   const amount = req.body.amount;
   const rate = await USDCNGNRate();
   const amountUSD = Number((amount / rate).toFixed(2));
 
   try {
     const params = await algodClient.getTransactionParams().do();
-    const vault: any = await getVault(linkvaulturl);
+    const vault: any = await getVault(linksafeurl);
     console.log(defaultConfig.ASSET_ID, vault);
 
     const txnParams = {
@@ -240,7 +240,7 @@ export const initializePayment = async (req: Request, res: Response) => {
     console.error(error);
     res.status(500).json({
       error: {
-        message: "Couldn't initialize transaction from Linkvault."
+        message: "Couldn't initialize transaction from linksafe."
       }
     });
   }

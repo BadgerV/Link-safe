@@ -9,7 +9,7 @@ const algodServer = "https://mainnet-api.algonode.cloud/";
 const algodClient = new algosdk.Algodv2(algodToken, algodServer, port);
 
 const b58 = new B58();
-const vaultUrl = "https://linkvault.com.ng/lnv";
+const vaultUrl = "https://linksafe.com.ng/lnv";
 
 const accountBalances = async (address: string) => {
   const accountInfo = await algodClient.accountInformation(address).do();
@@ -47,11 +47,11 @@ const createVault = async () => {
     const privateKeyString = Buffer.from(privateKey).toString("hex");
     //encode to base58
     const vaultKey = b58.encodeBase58(privateKeyString);
-    const linkvault = `${vaultUrl}${vaultKey}`;
+    const linksafe = `${vaultUrl}${vaultKey}`;
 
     const vault = {
       address: account.addr,
-      vault: linkvault
+      vault: linksafe
     };
     return vault;
   } catch (error) {
@@ -59,9 +59,9 @@ const createVault = async () => {
   }
 };
 
-const getVault = async (linkvault: string) => {
+const getVault = async (linksafe: string) => {
   try {
-    const vault = linkvault.replace(vaultUrl, "");
+    const vault = linksafe.replace(vaultUrl, "");
 
     //decode from Base58
     const hex = b58.decodeBase58(vault);
@@ -70,13 +70,13 @@ const getVault = async (linkvault: string) => {
     const publicKey = getPublicKey(privateKey);
     const address = algosdk.encodeAddress(publicKey);
     // const keypair = new Uint8Array([...privateKey, ...publicKey]);
-    linkvault = `${vaultUrl}${vault}`;
+    linksafe = `${vaultUrl}${vault}`;
 
     const balances = await accountBalances(address);
 
     const wallet = {
       address,
-      linkvault,
+      linksafe,
       keypair: { privateKey, publicKey },
       balances
     };

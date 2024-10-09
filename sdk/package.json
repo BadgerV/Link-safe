@@ -1,7 +1,7 @@
 {
   "name": "safe-vault",
   "version": "1.3.0",
-  "description": "Integrating Linkvault: Paving the Way for Widespread Crypto and Algorand Adoption, Providing Non Custodial algorand wallets via a simple link or QR. Including Algorand Standard Asset Integration.",
+  "description": "Integrating linksafe: Paving the Way for Widespread Crypto and Algorand Adoption, Providing Non Custodial algorand wallets via a simple link or QR. Including Algorand Standard Asset Integration.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Samuellyworld/safe-vault/tree/main/sdk"
   },
   "keywords": [
-    "linkvault"
+    "linksafe"
   ],
   "author": "David Kazeem & Samuel Tosin",
   "license": "ISC",

@@ -34,11 +34,11 @@ const createVault = async (req: Request, res: Response) => {
 
     //converts it to a string
     const privateKeyString = Buffer.from(privateKey).toString("hex");
-    const linkvault = `https://linkvault.io/${b58.encodeBase58(privateKeyString)}`;
+    const linksafe = `https://linksafe.io/${b58.encodeBase58(privateKeyString)}`;
     //encode to base58
     const vault = {
       Address: account.addr,
-      vault: linkvault
+      vault: linksafe
     };
     res.status(200).json({
       data: vault

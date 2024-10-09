@@ -117,7 +117,7 @@ export const Header = () => {
     <HeaderContainer>
       <LogoContainer onClick={() => navigate("/")}>
         <img src={"/assets/svg/logo.svg"} alt="logo" />
-        <h2>LinkVault</h2>
+        <h2>linksafe</h2>
       </LogoContainer>
       <HeaderAddons>
         {location.pathname === "/" ? (

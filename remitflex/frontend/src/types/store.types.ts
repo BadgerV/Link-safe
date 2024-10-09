@@ -14,7 +14,7 @@ export interface UserActionType {
 
 export interface CurrentVaultType {
   address: string;
-  linkvault: string;
+  linksafe: string;
   keypair: {
     privateKey: Uint8Array;
     publicKey: Uint8Array;

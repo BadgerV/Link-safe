@@ -21,8 +21,8 @@ export const corsSettings: CorsSettings = isProd
       credentials: true,
       origin: [
         "https://google.com",
-        "https://linkvault.com.ng",
-        "https://www.linkvault.com.ng",
+        "https://linksafe.com.ng",
+        "https://www.linksafe.com.ng",
         "https://remitsafe.com",
         "https://www.remitsafe.com",
         "https://safe-vault.netlify.app",

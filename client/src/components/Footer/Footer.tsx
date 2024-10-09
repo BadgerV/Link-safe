@@ -16,7 +16,7 @@ const Footer = () => {
           className="btn"
           onClick={() => navigate("/create")}
         >
-          Create a linkVault
+          Create a linksafe
         </CustomButton>
       </div>
       <p className="build">Created for Algorand's Build a Bull Hackathon</p>

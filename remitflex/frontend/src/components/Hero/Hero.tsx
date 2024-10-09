@@ -11,7 +11,7 @@ const Hero = () => {
         <h3>
           Send money & <br className="break" /> pay bills in Africa
         </h3>
-        <p className="scan">Scan your LinkVault to get started</p>
+        <p className="scan">Scan your linksafe to get started</p>
         <div className="btnGo">
           <Button title="Go to App" onClick={() => navigate("/app")} />
         </div>

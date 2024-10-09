@@ -18,7 +18,7 @@ export const SplashSection = () => {
       </h1>
       <p className="sub__text">Non-custodial algorand wallets via a Link. </p>
       <CustomButton variant="filled" type="button" onClick={() => navigate("/create")}>
-        Create a LinkVault
+        Create a linksafe
       </CustomButton>
       <SplashImageContainer src={"/assets/png/splash.png"} alt="splash" />
       <Sponsors />

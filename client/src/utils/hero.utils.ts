@@ -3,13 +3,13 @@ export const HEROCONTENT = [
     title: "Simplified Transfers",
     image: "/assets/svg/transfers.svg",
     description:
-      "LinkVault simplifies the process of sending money to friends and family, offering a practical use case that doesn't necessitate in-depth crypto knowledge."
+      "linksafe simplifies the process of sending money to friends and family, offering a practical use case that doesn't necessitate in-depth crypto knowledge."
   },
   {
     title: "Developer Portal",
     image: "/assets/svg/portal.svg",
     description:
-      "LinkVault offers a developer portal that allows you to integrate the LinkVault API into your applications."
+      "linksafe offers a developer portal that allows you to integrate the linksafe API into your applications."
   },
   {
     title: "Empowering Future Finance",

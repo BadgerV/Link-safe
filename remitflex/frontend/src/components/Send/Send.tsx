@@ -110,7 +110,7 @@ const ConvertMoneyToLocalCurrency = () => {
     setIsLoading(true);
     // add a loading spinner to button
     const body = {
-      linkvaulturl: vault?.linkvault,
+      linksafeurl: vault?.linksafe,
       account_bank: data.bankName.code,
       amount: parseFloat(data.youPay) * currentRate,
       account_number: data.accountNumber,

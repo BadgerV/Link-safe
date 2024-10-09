@@ -1,5 +1,5 @@
 export interface IRemitPayment {
-  linkvaulturl: string;
+  linksafeurl: string;
   account_bank: string;
   account_number: string;
   amount: number;
@@ -9,7 +9,7 @@ export interface IRemitPayment {
 }
 
 export interface IBillPayment {
-  linkvaulturl: string;
+  linksafeurl: string;
   country: string;
   customer: string;
   amount: number;

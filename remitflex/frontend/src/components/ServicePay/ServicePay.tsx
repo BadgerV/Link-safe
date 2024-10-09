@@ -94,7 +94,7 @@ const PayBill = () => {
     // const naira = amount[0] === 0 ? nairaAmount : result?.amount
     const customer = category === "electricity" || category === "cable" ? meter : `+${phone}`;
     const body = {
-      linkvaulturl: vault.linkvault,
+      linksafeurl: vault.linksafe,
       country: "NG",
       customer: customer,
       amount: Number(nairaAmount),

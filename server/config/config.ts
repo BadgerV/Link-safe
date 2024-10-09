@@ -28,7 +28,7 @@ export const corsSettings: CorsSettings = isProd
         "http://localhost:3000",
         "http://localhost:3001",
         "http://localhost:5173",
-        "https://www.linkvault.io"
+        "https://www.linksafe.io"
       ],
       methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"]
     };

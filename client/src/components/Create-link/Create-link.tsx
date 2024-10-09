@@ -137,7 +137,7 @@ const CreateLink = () => {
     setShowDropdownItems(false);
   };
 
-  const createEmptyLinkVault = async () => {
+  const createEmptylinksafe = async () => {
     const createdVault = await createVault();
     if (createdVault.address) {
       setCreatedVault(createdVault);
@@ -189,7 +189,7 @@ const CreateLink = () => {
     <>
       {!isVaultResolved ? (
         <Card>
-          <h2>Create a linkVault</h2>
+          <h2>Create a linksafe</h2>
           <AssetsShowcase
             ownedAssets={ownedAssets}
             params={false}
@@ -207,7 +207,7 @@ const CreateLink = () => {
               onChange={e => setAmount(e.target.value)}
             />
           </div>
-          <p className="empty__link" onClick={createEmptyLinkVault}>
+          <p className="empty__link" onClick={createEmptylinksafe}>
             Create an empty link to fund later?
           </p>
           <CustomButton variant="filled" type="button" onClick={createVaultAndFund}>

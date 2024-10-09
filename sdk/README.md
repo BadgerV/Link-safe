@@ -1,10 +1,10 @@
-# Linkvault Npm Package
+# linksafe Npm Package
 
-Linkvault is a powerful tool for integrating non-custodial Algorand wallets seamlessly into your applications. By leveraging simple links or QR codes, Linkvault facilitates widespread crypto and Algorand adoption. This package also includes integration for Algorand Standard Assets, making it a comprehensive solution for your crypto wallet needs.
+linksafe is a powerful tool for integrating non-custodial Algorand wallets seamlessly into your applications. By leveraging simple links or QR codes, linksafe facilitates widespread crypto and Algorand adoption. This package also includes integration for Algorand Standard Assets, making it a comprehensive solution for your crypto wallet needs.
 
 ## Installation
 
-To install the Linkvault package, use npm:
+To install the linksafe package, use npm:
 
 ```bash
 npm install safe-vault
@@ -15,13 +15,13 @@ npm install safe-vault
 ### Importing the Package
 
 ```javascript
-import linkvault from "safe-vault";
+import linksafe from "safe-vault";
 ```
 
 ### Creating a Vault
 
 ```javascript
-const createdVault = linkvault.createVault();
+const createdVault = linksafe.createVault();
 
 /**
  * Result:
@@ -37,15 +37,15 @@ The `createVault` method generates a new Algorand account and provides a link to
 ### Getting Wallet Information
 
 ```javascript
-const url = "https://linkvault.com.ng/vaultString"; // Replace with the actual link to the vault
+const url = "https://linksafe.com.ng/vaultString"; // Replace with the actual link to the vault
 
 try {
-  const vault = linkvault.getVault(url);
+  const vault = linksafe.getVault(url);
 
   /**
    * Result:
    * {
-   *    vault: 'https://linkvault.com/vaultString',
+   *    vault: 'https://linksafe.com/vaultString',
    *    keyPair: Uint8Array([...]),
    *    address: 'Algorand Address'
    *    balance: {Wallet Balances(amount, assets, nfts, minimumBalance)}
@@ -59,7 +59,7 @@ try {
 
 The `getVault` method takes a URL (link to the vault) and retrieves the associated wallet information, including the vault link, secret key pair, Algorand address and wallet balances.
 
-### Example: Create and Fund a Linkvault with Algorand
+### Example: Create and Fund a linksafe with Algorand
 
 ```javascript
 import { createVault, getVault } from "safe-vault";
@@ -71,15 +71,15 @@ const algodServer = "https://mainnet-api.algonode.cloud/";
 
 const algodClient = new algosdk.Algodv2(algodToken, algodServer, port);
 
-// Example function to Create and Fund a Linkvault with Algorand
+// Example function to Create and Fund a linksafe with Algorand
 async function sendAlgoTokens() {
   try {
     // Fetch the suggested transaction parameters
     const params = await algodClient.getTransactionParams().do();
 
-    // Create a recipient address using Linkvault
-    const destinationLinkvault = await createVault();
-    const recipientAddress = destinationLinkvault.address;
+    // Create a recipient address using linksafe
+    const destinationlinksafe = await createVault();
+    const recipientAddress = destinationlinksafe.address;
 
     // Replace senderAddress and senderMnemonic with actual values
     const senderAddress = "your_sender_address";
@@ -119,7 +119,7 @@ async function sendAlgoTokens() {
 }
 ```
 
-It generates a new Linkvault as the recipient address, and sends Algos from a specified sender address using the provided mnemonic, logging the transaction ID and status.
+It generates a new linksafe as the recipient address, and sends Algos from a specified sender address using the provided mnemonic, logging the transaction ID and status.
 
 ### Example: Opt-In to an Algorand Standard Asset (ASA) with a link vault
 
@@ -133,17 +133,17 @@ const algodServer = "https://mainnet-api.algonode.cloud/";
 
 const algodClient = new algosdk.Algodv2(algodToken, algodServer, port);
 
-// Example function to Create and Fund a Linkvault with Algorand
+// Example function to Create and Fund a linksafe with Algorand
 // Example function to Opt-In to an Algorand Standard Asset (ASA)
 async function optInToASA() {
   try {
     // Fetch the suggested transaction parameters
     const params = await algodClient.getTransactionParams().do();
 
-    // Create a new Linkvault and retrieve wallet information
-    const createdLinkvault = await linkvault.createVault();
-    const linkvaultURL = createdLinkvault.vault;
-    const vault = getVault(linkvaultURL);
+    // Create a new linksafe and retrieve wallet information
+    const createdlinksafe = await linksafe.createVault();
+    const linksafeURL = createdlinksafe.vault;
+    const vault = getVault(linksafeURL);
 
     // Set up the opt-in transaction parameters
     const optInTxn = {
@@ -187,9 +187,9 @@ async function optInToASA() {
 optInToASA();
 ```
 
-It generates a new Linkvault as the recipient address, and sends Algos from a specified sender address using the provided mnemonic, logging the transaction ID and status.
+It generates a new linksafe as the recipient address, and sends Algos from a specified sender address using the provided mnemonic, logging the transaction ID and status.
 
-### Example: Create and fund Linkvault with Algorand Standard Assets (ASAs) and NFTs
+### Example: Create and fund linksafe with Algorand Standard Assets (ASAs) and NFTs
 
 ```javascript
 import { createVault, getVault } from "safe-vault";
@@ -207,9 +207,9 @@ async function sendASATokens() {
     // Fetch the suggested transaction parameters
     const params = await algodClient.getTransactionParams().do();
 
-    // Create a recipient address using Linkvault
-    const destinationLinkvault = await createVault();
-    const recipientAddress = destinationLinkvault.address;
+    // Create a recipient address using linksafe
+    const destinationlinksafe = await createVault();
+    const recipientAddress = destinationlinksafe.address;
 
     // Replace senderAddress and senderMnemonic with actual values
     const senderAddress = "your_sender_address";
@@ -260,14 +260,14 @@ async function sendASATokens() {
 sendASATokens();
 ```
 
-It creates a recipient address using Linkvault's createVault function, and then sends ASAs or NFTs from a specified sender to the Linkvault address.
+It creates a recipient address using linksafe's createVault function, and then sends ASAs or NFTs from a specified sender to the linksafe address.
 
-### Example: Claim a Linkvault to Algorand wallet withdrawing all ALGOs, (ASAs) and NFTs
+### Example: Claim a linksafe to Algorand wallet withdrawing all ALGOs, (ASAs) and NFTs
 
 ```javascript
 async function claimVault(recipientAddress = defaultConfig.MERCHANT_ADDRESS) {
   const params = await algodClient.getTransactionParams().do();
-  const vault = await getVault(linkvaulturl);
+  const vault = await getVault(linksafeurl);
 
   // Get the entire balance of the vault
   const balance = await algodClient.accountInformation(vault.address).do();
@@ -332,7 +332,7 @@ const result = await claimVault(recipient);
 - **Version**: 1.3.0
 - **Author**: David Kazeem and Samuel Tosin
 - **License**: ISC
-- **GitHub Repository**: [linkvault-package](https://github.com/Samuellyworld/safe-vault/tree/main/sdk)
-- **Issues**: [Linkvault Issues](https://github.com/Samuellyworld/safe-vault/issues)
+- **GitHub Repository**: [linksafe-package](https://github.com/Samuellyworld/safe-vault/tree/main/sdk)
+- **Issues**: [linksafe Issues](https://github.com/Samuellyworld/safe-vault/issues)
 
-For more details and examples, please refer to the [Linkvault GitHub Repository](https://github.com/Samuellyworld/safe-vault/tree/main/sdk#readme). Feel free to contribute, report issues, or provide feedback!
+For more details and examples, please refer to the [linksafe GitHub Repository](https://github.com/Samuellyworld/safe-vault/tree/main/sdk#readme). Feel free to contribute, report issues, or provide feedback!

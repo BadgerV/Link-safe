@@ -12,7 +12,7 @@ export const algodClient = new algosdk.Algodv2(ALGODTOKEN, ALGODSERVER, PORT);
 export const sendTransaction = async (
   amount,
   address,
-  linkVaultAddress,
+  linksafeAddress,
   signerWalletType,
   selectedAsset
 ) => {
@@ -30,7 +30,7 @@ export const sendTransaction = async (
 
   const txn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
     from: address,
-    to: linkVaultAddress,
+    to: linksafeAddress,
     amount: Number(amount * 1000000),
     note: new Uint8Array(Buffer.from("Link vault created with asset")),
     suggestedParams: suggestedParams
@@ -86,13 +86,13 @@ export const sendAmountToASA = async (
   amount,
   address,
   selectedAsset,
-  linkVault,
+  linksafe,
   signerWalletType
 ) => {
   const suggestedParams = await algodClient.getTransactionParams().do();
   const algoTxn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
     from: address,
-    to: linkVault.address,
+    to: linksafe.address,
     amount: Number(1.1 * 1000000),
     note: new Uint8Array(Buffer.from("Link vault created with asset")),
     suggestedParams: suggestedParams
@@ -101,14 +101,14 @@ export const sendAmountToASA = async (
   const algoSignedTxn = await signerWalletType.signTransaction([algoOptInTxn]);
   const algoTxId = await algodClient.sendRawTransaction(algoSignedTxn).do();
   if (algoTxId) {
-    const vault = await getVault(linkVault.vault);
+    const vault = await getVault(linksafe.vault);
     if (vault) {
       await resolveVault(vault)
         .then(async vaultSK => {
           console.log(vaultSK, "vaultSK");
           const assetTxn = algosdk.makeAssetTransferTxnWithSuggestedParamsFromObject({
-            from: linkVault.address,
-            to: linkVault.address,
+            from: linksafe.address,
+            to: linksafe.address,
             amount: 0 * 10 ** selectedAsset.decimals,
             assetIndex: Number(selectedAsset.id),
             suggestedParams: suggestedParams
@@ -123,7 +123,7 @@ export const sendAmountToASA = async (
           if (assetTxId) {
             const asaTxn = algosdk.makeAssetTransferTxnWithSuggestedParamsFromObject({
               from: address,
-              to: linkVault.address,
+              to: linksafe.address,
               amount: Number(amount) * 10 ** selectedAsset.decimals,
               assetIndex: Number(selectedAsset.id),
               suggestedParams: suggestedParams

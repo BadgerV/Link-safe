@@ -21,7 +21,7 @@ const VaultScanner: React.FC = () => {
       ""
     );
     const res = await getVault(nobleCurveKey);
-    setData(res.linkvault);
+    setData(res.linksafe);
     setCurrentUser(res);
     return res;
   };
@@ -44,7 +44,7 @@ const VaultScanner: React.FC = () => {
     if (!data) return;
     const linkWallet = await getVault(data);
     if (!linkWallet) {
-      alert("Invalid LinkVault URL");
+      alert("Invalid linksafe URL");
       return;
     } else {
       dispatch(setCurrentUser(linkWallet));
@@ -74,7 +74,7 @@ const VaultScanner: React.FC = () => {
           <img src="/assets/scan.svg" alt="scan" onClick={handleStart} />
         )}
       </div>
-      <h3>Scan LinkVault QR code</h3>
+      <h3>Scan linksafe QR code</h3>
       <div className="vault__cont">
         <p>Or</p>
         <p>Enter Link vault URL</p>
