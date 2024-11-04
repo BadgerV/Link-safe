@@ -58,6 +58,7 @@ const CreateLink = () => {
 
   const AVAILABLE_ASSETS = async () => {
     const assets = await computeAssets(address);
+    console.log(assets, "create link")
     setOwnedAssets(assets ?? { assets: [], nfts: [] });
   };
 

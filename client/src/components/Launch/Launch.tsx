@@ -43,6 +43,7 @@ const LaunchVault = () => {
   const AVAILABLE_ASSETS = async () => {
     setIsLoading(true);
     const assets = await computeAssets(vaultNobleLink.address);
+    console.log(assets, "lauynch")
     setOwnedAssets(assets ?? { assets: [], nfts: [] });
 
     setIsLoading(false);

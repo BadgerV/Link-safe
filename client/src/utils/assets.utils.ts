@@ -54,6 +54,7 @@ export const computeAssets = async (address: string) => {
       return;
     }
     const assetsList: Record<string, Asset> | any = await assets.GET_ALL_ASSETS();
+    console.log(assets, "assets")
     if (!assetsList) {
       return;
     }
