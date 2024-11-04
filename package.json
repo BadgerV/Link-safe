@@ -1,0 +1,41 @@
+{
+    "name": "link-safe",
+    "version": "1.0.0",
+    "description": " Providing Non Custodial algorand wallets via a simple link or QR",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start" : "cd remitflex && cd backend && node dist/server.js",
+      "build": "cd remitflex/backend && npm install && npm run build",
+      "client": "npm start --w @link-safe/client",
+      "dev": "npm run server && npm run client",
+      "deploy": "npm run build --w @link-safe/client",
+      "lint": "eslint .",
+      "lint:fix": "eslint . --fix",
+      "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+      "format:check": "prettier --check './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/badgerv/Link-safe.git"
+    },
+    "author": "Segunmaru Faozan",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/badgerv/Link-safe/issues"
+    },
+    "homepage": "https://github.com/badgerv/Link-safe#readme",
+    "devDependencies": {
+      "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+      "@babel/plugin-transform-private-property-in-object": "^7.22.11",
+      "babel-eslint": "^10.1.0",
+      "eslint": "^8.52.0",
+      "eslint-config-prettier": "^9.0.0",
+      "eslint-config-react-app": "^7.0.1",
+      "eslint-plugin-node": "^11.1.0",
+      "eslint-plugin-prettier": "^5.0.1",
+      "prettier": "^3.0.3",
+      "typescript": "^5.1.6"
+    }
+  }
+  
