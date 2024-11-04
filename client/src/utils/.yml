@@ -1,0 +1,70 @@
+# image: jhipster/jhipster:v6.10.5
+image: maven:3-eclipse-temurin-17
+
+cache:
+  key: '$CI_COMMIT_REF_NAME'
+  paths:
+    - .m2/repository/
+    - target/
+    - .maven/
+stages:
+  - sonarqube-check
+  - sonarqube-vulnerability-report
+  - deploy
+before_script:
+  - export NG_CLI_ANALYTICS="false"
+  - export MAVEN_USER_HOME=`pwd`/.maven
+
+variables:
+  SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
+  GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task\
+
+sonarqube-check:
+  stage: sonarqube-check
+  
+  script: 
+    - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+  allow_failure: true
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == 'master'
+    - if: $CI_COMMIT_BRANCH == 'main'
+    - if: $CI_COMMIT_BRANCH == 'develop'
+  only:
+    - main
+    # - development
+
+sonarqube-vulnerability-report:
+  stage: sonarqube-vulnerability-report
+  script:
+    - 'curl -u "${SONAR_TOKEN}:" "${SONAR_HOST_URL}/api/issues/gitlab_sast_export?projectKey=systemspecs_remita-payment-services_technology_platform-engineering_core-platform_vending_vending-service-aba_a1d5b340-82f7-45e9-9341-df355fd7590e&branch=${CI_COMMIT_BRANCH}&pullRequest=${CI_MERGE_REQUEST_IID}" -o gl-sast-sonar-report.json'
+  allow_failure: true
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == 'master'
+    - if: $CI_COMMIT_BRANCH == 'main'
+    - if: $CI_COMMIT_BRANCH == 'develop'
+  artifacts:
+    expire_in: 1 day
+    reports:
+      sast: gl-sast-sonar-report.json
+  only:
+    - main
+    # - development
+
+package-maven:
+  stage: deploy
+  script:
+    - echo $CI_JOB_TOKEN
+    - mvn -ntp deploy -s ci_settings.xml -Dmaven.repo.local=$MAVEN_USER_HOME
+  # We only allow production promotion on master because
+  # in this way you can protect production scoped secret variables
+  only:
+    - main
+    - development
+
+
+
+
+
+

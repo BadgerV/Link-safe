@@ -1,0 +1,30 @@
+<svg width="166" height="166" viewBox="0 0 166 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_494_2)">
+<circle cx="83.0002" cy="82.7214" r="80.9513" transform="rotate(1.16083 83.0002 82.7214)" fill="url(#paint0_linear_494_2)"/>
+<circle cx="83.0002" cy="82.7214" r="80.4513" transform="rotate(1.16083 83.0002 82.7214)" stroke="#653780"/>
+</g>
+<g clip-path="url(#clip0_494_2)">
+<path d="M52.375 87.0585L45.6594 80.6492C41.6747 76.5235 39.4698 70.9978 39.5196 65.2623C39.5695 59.5267 41.87 54.0402 45.9258 49.9844C49.9817 45.9286 55.4682 43.628 61.2037 43.5782C66.9393 43.5283 72.465 45.7332 76.5906 49.7179L83 56.4335" stroke="#653780" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M113.625 87.0588L120.34 93.4682C124.325 97.5938 126.53 103.119 126.48 108.855C126.43 114.591 124.13 120.077 120.074 124.133C116.018 128.189 110.532 130.489 104.796 130.539C99.0605 130.589 93.5348 128.384 89.4091 124.399L82.9998 117.684" stroke="#653780" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52.375 104.559H39.25" stroke="#653780" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M133.043 74.6584H119.918" stroke="#653780" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65.5 117.684V130.809" stroke="#653780" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100.5 43.3088V56.4338" stroke="#653780" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65.5 76.2269L82.2797 92.883L118.999 56.4338" stroke="#E53F71" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_b_494_2" x="-19.9512" y="-20.2303" width="205.903" height="205.903" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="11"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_494_2"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_494_2" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_494_2" x1="83.0002" y1="1.7701" x2="83.0002" y2="163.673" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FEF7F9" stop-opacity="0"/>
+<stop offset="1" stop-color="#FEF7F9"/>
+</linearGradient>
+<clipPath id="clip0_494_2">
+<rect width="140" height="140" fill="white" transform="matrix(-1 0 0 1 153 17.0588)"/>
+</clipPath>
+</defs>
+</svg>

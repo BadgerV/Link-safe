@@ -1,0 +1,8 @@
+{
+  "api": {
+    "key": "your-test-api-key"
+  },
+  "testing": {
+    "enabled": true
+  }
+}
