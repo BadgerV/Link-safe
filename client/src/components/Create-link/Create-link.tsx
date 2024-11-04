@@ -57,6 +57,7 @@ const CreateLink = () => {
   const [showPopup, setShowPopup] = useState(false);
 
   const AVAILABLE_ASSETS = async () => {
+    console.log(address, "address")
     const assets = await computeAssets(address);
     console.log(assets, "create link")
     setOwnedAssets(assets ?? { assets: [], nfts: [] });
