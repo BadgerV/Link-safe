@@ -4,7 +4,7 @@
 
 Paving the Way for Widespread Crypto and Algorand Adoption, Providing Non Custodial algorand wallets via a simple link or QR. Including Algorand Standard Asset Integration.
 
-![image](https://postimg.cc/5HkBCBZL)
+![image](https://i.postimg.cc/DZ7BR56j/Linksafe-page-0001.jpg)
 
 ## 🎉 About.
 
