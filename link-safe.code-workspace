@@ -1,0 +1,24 @@
+{
+    "folders": [
+      {
+        "name": "@link-safe/remitflex/frontend",
+        "path": "./remitflex/frontend"
+      },
+      {
+        "name": "@link-safe/remitflex/backend",
+        "path": "./remitflex/backend"
+      },
+      {
+        "name": "@link-safe/client",
+        "path": "./client"
+      },
+      {
+        "name": "@link-safe/smart-contracts",
+        "path": "./smart-contracts"
+      },
+      {
+        "name": "root",
+        "path": "./"
+      }
+    ]
+  }
