@@ -1,0 +1,49 @@
+{
+  "name": "LinkSafe",
+  "desc": "",
+  "methods": [
+    {
+      "name": "createSafe",
+      "args": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "owner",
+          "type": "string"
+        },
+        {
+          "name": "minimumBalance",
+          "type": "uint64"
+        },
+        {
+          "name": "created",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "(address,string,uint64,uint64,uint64,bool)"
+      }
+    },
+    {
+      "name": "getVaultById",
+      "args": [
+        {
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "returns": {
+        "type": "(address,string,uint64,uint64,uint64,bool)"
+      }
+    },
+    {
+      "name": "createApplication",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    }
+  ]
+}
