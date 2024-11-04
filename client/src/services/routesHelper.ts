@@ -27,6 +27,6 @@ export const hostRoute = host;
 export const clientRoute = client;
 
 
-export const allAssetsRoute = REACT_APP_DEV_ASSETS_URL;
+export const allAssetsRoute = "https://asa-list.tinyman.org";
 
 console.log(allAssetsRoute, "all assest routes")
