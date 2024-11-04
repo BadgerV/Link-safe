@@ -90,9 +90,9 @@ export const LaunchContainer = styled.div`
       border: solid 1px var(--vault-primary);
       border-radius: 6px;
       cursor: pointer;
-      background: #e53f7124;
+      background: #E53F7124;
       &:hover {
-        background: #e53f71;
+        background: #E53F71;
         color: white;
       }
     }
@@ -152,7 +152,7 @@ export const LaunchContainer = styled.div`
       }
 
       .claim__button {
-        background: #e53f71;
+        background: #E53F71;
       }
 
       .deposit__button {

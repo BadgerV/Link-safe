@@ -23,7 +23,7 @@ export const ButtonSpinnerRing = styled.div<ButtonProps>`
   width: 20px;
   height: 20px;
   border-radius: 99px;
-  border: 3px solid ${props => props["--spinner-color"] || "white"};
+  border: 3px solid ${(props) => props["--spinner-color"] || "white"};
   opacity: 0.5;
 `;
 
@@ -34,7 +34,7 @@ export const ButtonSpin = styled.div<ButtonProps>`
   right: 0;
   bottom: 0;
   border: 3px solid transparent;
-  border-top-color: ${props => props["--spinner-color"] || "white"};
+  border-top-color: ${(props) => props["--spinner-color"] || "white"};
   border-radius: 99px;
   animation: ${spin} 0.75s linear infinite;
 `;
@@ -65,7 +65,7 @@ export const Button = styled.button`
 export const ButtonDefault = styled(Button)<ButtonProps>`
   &.outlined {
     &:disabled {
-      border: 1px solid ${props => props["--color-gray-200"] || "#E0E0E0"};
+      border: 1px solid ${(props) => props["--color-gray-200"] || "#E0E0E0"};
     }
   }
 `;
@@ -79,7 +79,7 @@ export const ButtonStriped = styled(Button)`
 
   &.filled {
     background: transparent;
-    color: var(--vault-primary);
+    color: transparent;
     border: solid 2px var(--vault-primary);
 
     &:hover {
@@ -89,7 +89,7 @@ export const ButtonStriped = styled(Button)`
 
     &:disabled {
       pointer-events: none;
-      background: #b2b2b2;
+      background: transparent;
       color: var(--vault-white);
       border: transparent;
     }
@@ -109,11 +109,11 @@ export const ButtonGradient = styled(Button)`
   transition: none;
 
   &.filled {
-    background: linear-gradient(295.67deg, #de0d6f 16.23%, #731054 83.77%);
+    background: #E53F71;
     color: var(--vault-white);
 
     &:hover {
-      background: var(--vault-primary);
+      background: green;
       background-position: 100% 0;
     }
 
@@ -135,7 +135,7 @@ export const ButtonGradient = styled(Button)`
 
 export const ButtonPurple = styled(Button)`
   &.filled {
-    background: var(--vault-primary);
+    background: #e53f71;
     color: var(--vault-white);
 
     &:hover {

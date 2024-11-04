@@ -31,7 +31,7 @@ export const FooterContainer = styled.div`
     postion: absolute;
     margin-left: 10rem;
 
-    background-color: #e53f71;
+    background-color: #E53F71;
   }
   .build {
     margin-top: 2rem;

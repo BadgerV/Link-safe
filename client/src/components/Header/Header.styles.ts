@@ -52,7 +52,7 @@ export const LogoContainer = styled.div`
   h2 {
     font-weight: 700;
     font-size: var(--font-size-m);
-    color: var(--vault-primary);
+    color: #653780;
     font-family: var(--font-family-geom);
 
     @media screen and (max-width: 500px) {
@@ -81,7 +81,7 @@ export const HeaderAddons = styled.div`
     font-family: var(--font-family-nista);
     ${flexCenter()};
     gap: 0.5rem;
-    color: #e53f71;
+    color: black;
     cursor: pointer;
 
     @media screen and (max-width: 500px) {

@@ -4,7 +4,7 @@ import { gradientAnimation } from "../../styles/__animations";
 
 export const SplashSectionContainer = styled.div`
   --color-light-purple: rgb(207, 89, 230);
-  --color-light-whitesmoke: #e53f71;
+  --color-light-whitesmoke: #E53F71;
 
   ${flexCenter()};
   flex-direction: column;
@@ -59,7 +59,7 @@ export const SplashSectionContainer = styled.div`
   }
 
   button {
-    border-bottom: 4px solid #e53f71;
+    border-bottom: 4px solid #E53F71;
     padding: 10px 40px;
   }
 `;

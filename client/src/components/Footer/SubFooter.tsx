@@ -6,7 +6,7 @@ const SubFooter = () => {
       <div className="SubFooterDiv">
         <div className="shareDiv">
           <p className="share">
-            Share <br /> Crypto via <br /> juat a link<span className="dot">.</span>
+            Share <br /> Crypto via <br /> just a link<span className="dot">.</span>
           </p>
           <div className="perfect">
             <p>perfect for</p>

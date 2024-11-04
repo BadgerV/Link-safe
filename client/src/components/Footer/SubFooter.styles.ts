@@ -26,7 +26,7 @@ export const SubFooterContainer = styled.div`
     padding-bottom: 2rem;
   }
   .dot {
-    color: #e53f71;
+    color: #E53F71;
   }
   .perfect {
     padding-top: 1rem;
@@ -37,8 +37,8 @@ export const SubFooterContainer = styled.div`
   }
 
   .gifts {
-    border: 0.5px solid #e53f71;
-    color: #e53f71;
+    border: 0.5px solid #E53F71;
+    color: #E53F71;
     border-radius: 2rem;
     padding: 5px 10px;
     cursor: pointer;

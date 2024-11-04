@@ -96,6 +96,17 @@ export const HeroContainer = styled.div`
       margin-top:1.5rem;
       display: flex;
       align-items: center;
+      flex-direction: row;
+      gap: 0.3em;
+      img {
+        max-height: 30px;
+        width: 90px;
+      }
+
+      .icon {
+        width: 30px;
+       
+      }
       
       @media screen and (max-width: 760px) {
         margin-top:3rem;

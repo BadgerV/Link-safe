@@ -151,7 +151,7 @@ export const ScrollProgress = styled.div<CustomScrollBarProps>`
   height: 80%;
   border-radius: 2px;
   opacity: 1;
-  background-color: #fad9e3;
+  background-color: #CCF7FF;
 
   @media screen and (max-width: 900px) {
     display: none;
@@ -164,7 +164,7 @@ export const ScrollProgress = styled.div<CustomScrollBarProps>`
     left: 0;
     width: 100%;
     height: ${props => props.scrollPercentage + "%"};
-    background-color: #e53f71; 
+    background-color: #E53F71; 
     border-radius: inherit;
     }
 
@@ -174,14 +174,14 @@ export const ScrollProgress = styled.div<CustomScrollBarProps>`
      top: ${props => props.scrollPercentage + "%"};
      left: 50%;
      transform: translateX(-50%);
-     color: #e53f71;
+     color: #E53F71;
      font-weight: bold;
      width: 13px;
      height: 13px;
-     box-shadow: 0 0 10px #e53f71; 
+     box-shadow: 0 0 10px #E53F71; 
      margin-top: -7px;
      padding: 4px;
-     background-color: #e53f71; 
+     background-color: #E53F71; 
      border-radius: 100%;
      opacity: 0.8;
      }

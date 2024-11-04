@@ -22,7 +22,6 @@ export const Header = () => {
   const walletType = useSelector((state: RootState) => state.currentUser?.walletType);
   const location = useLocation();
 
-  console.log(peraWallet,)
 
   const peraWalletReconnect = () => {
     peraWallet

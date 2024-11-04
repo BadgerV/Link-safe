@@ -242,7 +242,7 @@ const CreateLink = () => {
     <>
       {!isVaultResolved ? (
         <Card>
-          <h2>Create a linkVault</h2>
+          <h2>Create a linkSafe</h2>
           <AssetsShowcase
             ownedAssets={ownedAssets}
             params={false}
