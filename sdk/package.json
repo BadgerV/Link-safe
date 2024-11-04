@@ -1,0 +1,29 @@
+{
+  "name": "link-safe",
+  "version": "1.4.0",
+  "description": "Integrating LinkSafe: Paving the Way for Widespread Crypto and Algorand Adoption, Providing Non Custodial algorand wallets via a simple link or QR. Including Algorand Standard Asset Integration.",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BadgerV/Link-safe.git#main"
+  },
+  "keywords": [
+    "linksafe"
+  ],
+  "author": "Segunmaru Faozan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BadgerV/Link-safe/issues"
+  },
+  "homepage": "https://github.com/BadgerV/Link-safe/tree/main/sdk#readme",
+  "dependencies": {
+    "@noble/curves": "^1.2.0",
+    "algosdk": "^2.7.0",
+    "buffer": "^6.0.3",
+    "typescript": "^5.2.2"
+  }
+}
