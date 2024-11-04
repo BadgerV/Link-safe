@@ -1,8 +1,0 @@
-{
-  "api": {
-    "key": "your-dev-api-key"
-  },
-  "logging": {
-    "level": "info"
-  }
-}

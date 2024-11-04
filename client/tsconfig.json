@@ -27,7 +27,6 @@
     "src/**/*", // Limit inclusion to source files
     "vite.config.js",
     "src/index.tsx",
-    ".d.ts"
   ],
   "exclude": [
     "node_modules" // Explicitly exclude node_modules
