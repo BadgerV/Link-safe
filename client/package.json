@@ -83,6 +83,8 @@
     "autoprefixer": "^10.4.14",
     "ts-node": "^10.9.1",
     "vite": "^5.0.0"
-  
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.6.1"
   }
 }
