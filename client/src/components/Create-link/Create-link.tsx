@@ -194,17 +194,17 @@ const CreateLink = () => {
         `You do not have sufficient balance to make this transaction`
       );
 
-  const params = await algodClient.getTransactionParams().do();
-  const txn = algosdk.makeApplicationCallTxnFromObject({
-    from : address,
-    appIndex: 0,
-    onComplete: algosdk.OnApplicationComplete.NoOpOC,
-    suggestedParams: params,
-    appArgs : []
-  })
+  // const params = await algodClient.getTransactionParams().do();
+  // const txn = algosdk.makeApplicationCallTxnFromObject({
+  //   from : address,
+  //   appIndex: 0,
+  //   onComplete: algosdk.OnApplicationComplete.NoOpOC,
+  //   suggestedParams: params,
+  //   appArgs : []
+  // })
 
-  // Get the transaction signed by Pera Wallet
-  const signedTxn = await peraWallet.signTransaction([[{ txn, signers: [address] }]]);
+  // // Get the transaction signed by Pera Wallet
+  // const signedTxn = await peraWallet.signTransaction([[{ txn, signers: [address] }]]);
     
   // // Send the transaction
   // const { txId } = await algodClient.sendRawTransaction(signedTxn).do();

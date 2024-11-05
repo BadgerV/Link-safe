@@ -70,6 +70,7 @@ docker-compose up  --build
 ## 👨🏼‍🍳 Team.
 
 - [Segunmaru Faozan](https://github.com/badgerv) [Software Engineer]
+- [Adebimpe Grace] [Designer]
 
 ## 🔗 Links.
 
